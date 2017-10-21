@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import ToggleBox from './ToggleBox';
 
 class Home extends Component {
   render() {
-    return(
-      <h1>
-        Home Page
-      </h1>
+    return (
+      <div>
+        <ToggleBox />
+      </div>
     );
   }
 }

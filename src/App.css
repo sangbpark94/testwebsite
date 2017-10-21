@@ -22,7 +22,221 @@
   font-size: large;
 }
 
+.Homepage-lightbulb {
+  z-index: 100;
+}
+
+/* Don't know if I need
+
+.Homepage-circles {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border: solid 50px #f00;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+*/
+
+.Homepage-background-on {
+  background-color: #2fef3f;
+  padding: 1em;
+  max-width:3000px;
+  min-height:100vh;
+  width:100%;
+  margin: auto;
+  box-sizing:border-box;
+}
+
+.Homepage-background-off {
+  background-color: black;
+  padding: 1em;
+  max-width:3000px;
+  min-height:100vh;
+  width:100%;
+  margin: auto;
+  box-sizing:border-box;
+}
+
+.Homepage-content {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  margin: 0;
+  vertical-align: middle;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+.Homepage-lightbulb {
+  width: 150px;
+}
+
+.Homepage-welcome-off {
+  color: white;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-family: 'Pacifico', cursive;
+  font-size: 48pt;
+  padding-bottom: 30px;
+}
+
+.Homepage-welcome-on {
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+  font-family: 'Pacifico', cursive;
+  font-size: 48pt;
+  padding-bottom: 30px;
+}
+
+.Homepage-what-button {
+  background-color: #f7e138;
+  border-radius: 4px;
+  border: none;
+  color: #00000;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.Homepage-what-button span {
+  font-size: 18pt;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Homepage-what-button span:after {
+  content: "is this place?";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.Homepage-what-button:hover span {
+  background-color: #f7e138;
+  padding-right: 142px;
+}
+
+.Homepage-what-button:hover span:after {
+  background-color: #f7e138;
+  opacity: 1;
+  right: 0;
+}
+
+.Homepage-who-button {
+  background-color: #f7e138;
+  border-radius: 4px;
+  border: none;
+  color: #00000;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.Homepage-who-button span {
+  font-size: 18pt;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Homepage-who-button span:after {
+  content: "is this guy?";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.Homepage-who-button:hover span {
+  background-color: #f7e138;
+  padding-right: 124px;
+}
+
+.Homepage-who-button:hover span:after {
+  background-color: #f7e138;
+  opacity: 1;
+  right: 0;
+}
+
+.Navbar-Color{
+  background-color: lightblue;
+}
+
+.nav-link {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  position: relative;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1100px) {
+  .Homepage-welcome-off { font-size: 38pt; padding-bottom: 17px; }
+  .Homepage-welcome-on { font-size: 38pt; padding-bottom: 17px; }
+  .Homepage-what-button { width: 200px; height: 65px; padding: 0px; }
+  .Homepage-what-button span { font-size: 15pt; }
+  .Homepage-what-button span:after { right: -70px }
+  .Homepage-what-button:hover span { padding-right: 119px; }
+  .Homepage-who-button { width: 200px; height: 65px; padding: 0px; }
+  .Homepage-who-button span { font-size: 15pt; }
+  .Homepage-who-button span:after { right: -70px; }
+  .Homepage-who-button:hover span { padding-right: 104px; }
+}
+
+@media screen and (max-width: 800px) {
+  .Homepage-welcome-off { font-size: 28pt; padding-bottom: 12px; }
+  .Homepage-welcome-on { font-size: 28pt; padding-bottom: 12px; }
+  .Homepage-what-button { width: 145px; height: 50px; }
+  .Homepage-what-button span { font-size: 12pt }
+  .Homepage-what-button span:after { right: -53px }
+  .Homepage-what-button:hover span { padding-right: 94px; }
+  .Homepage-who-button { width: 145px; height: 50px; }
+  .Homepage-who-button span { font-size: 12pt }
+  .Homepage-who-button span:after { right: -50px; }
+  .Homepage-who-button:hover span { padding-right: 83px; }
+}
+
+@media screen and (max-width: 600px) {
+  .Homepage-welcome-off { font-size: 18pt; padding-bottom: 5px; }
+  .Homepage-welcome-on { font-size: 18pt; padding-bottom: 5px; }
+  .Homepage-what-button { width: 110px; height: 35px; }
+  .Homepage-what-button span { font-size: 8pt }
+  .Homepage-what-button span:after { right: -38px }
+  .Homepage-what-button:hover span { padding-right: 63px; }
+  .Homepage-who-button { width: 110px; height: 35px; }
+  .Homepage-who-button span { font-size: 8pt }
+  .Homepage-who-button span:after { right: -35px; }
+  .Homepage-who-button:hover span { padding-right: 55px; }
+}
+
+@media screen and (max-width: 400px) {
+  .Homepage-welcome-off { font-size: 12pt; padding-bottom: 0px; }
+  .Homepage-welcome-on { font-size: 12pt; padding-bottom: 0px; }
+  .Homepage-what-button { width: 70px; height: 20px; }
+  .Homepage-what-button span { font-size: 5pt; bottom:6px; }
+  .Homepage-what-button span:after { right: -25px }
+  .Homepage-what-button:hover span { padding-right: 39px; }
+  .Homepage-who-button { width: 70px; height: 20px; }
+  .Homepage-who-button span { font-size: 5pt;  bottom:6px; }
+  .Homepage-who-button span:after { right: -20px; }
+  .Homepage-who-button:hover span { padding-right: 35px; }
 }
