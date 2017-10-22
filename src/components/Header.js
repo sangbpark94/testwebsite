@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 class Header extends Component {
   state = {
-      isOpen: false
+      isOpen: false,
+      jackIsToCool: 'give him money'
   };
 
   toggle = () => {

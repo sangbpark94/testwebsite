@@ -27,15 +27,15 @@ class ToggleBox extends Component {
         <div className="boxTitleB">
           {opened && (
             <div className="Homepage-background-on">
+              <div onClick={this.toggleBox}>
+                {opened && (
+                  <img className="Homepage-lightbulb" src={lightbulbon}></img>
+                )}
+                {!opened && (
+                  <img className="Homepage-lightbulb" src={lightbulboff}></img>
+                )}
+              </div>
               <div className="Homepage-content">
-                <div className="boxTitleA" onClick={this.toggleBox}>
-                  {opened && (
-                    <img className="Homepage-lightbulb" src={lightbulbon}></img>
-                  )}
-                  {!opened && (
-                    <img className="Homepage-lightbulb" src={lightbulboff}></img>
-                  )}
-                </div>
                 <h1 className="Homepage-welcome-on">Welcome to Sang's Webpage</h1>
                 <Link to="/about"><button className="Homepage-who-button"><span>Who</span></button></Link>
                 <Link to="/showcase"><button className="Homepage-what-button"><span>What</span></button></Link>
@@ -44,15 +44,15 @@ class ToggleBox extends Component {
           )}
           {!opened && (
             <div className="Homepage-background-off">
+              <div onClick={this.toggleBox}>
+                {opened && (
+                  <img className="Homepage-lightbulb" src={lightbulbon}></img>
+                )}
+                {!opened && (
+                  <img className="Homepage-lightbulb" src={lightbulboff}></img>
+                )}
+              </div>
               <div className="Homepage-content">
-                <div className="boxTitleA" onClick={this.toggleBox}>
-                  {opened && (
-                    <img className="Homepage-lightbulb" src={lightbulbon}></img>
-                  )}
-                  {!opened && (
-                    <img className="Homepage-lightbulb" src={lightbulboff}></img>
-                  )}
-                </div>
                 <h1 className="Homepage-welcome-off">Welcome to Sang's Webpage</h1>
                 <Link to="/about"><button className="Homepage-who-button"><span>Who</span></button></Link>
                 <Link to="/showcase"><button className="Homepage-what-button"><span>What</span></button></Link>
